@@ -1,21 +1,19 @@
-# Bloglist frontend
+## GraphQL frontend
 
-In this exercise, we will refactor the Bloglist application that we worked on in parts four and five for it to use Redux for the application's state management. We also used `React Router` for conditional rendering of components based on the url in the browser, as well as `React Bootstrap` for styling our application.
+Through the exercises, we will implement a GraphQL frontend for the GraphQL-library created previously.
 
-We assume that a user already exist in the database with the good credentials. If not, please head to part 4 for creating a new user using the API.
 
-## Start the application locally
+### Start the application locally
+First, you need to start the backend from the previous exercise. To do so, head to the `part8/library-backend` directory and follow the instructions from the README.
 
-To start an application:
 
+Then, start the frontend:
 ```bash
-# First, you need to start the backend, to do so, head to the part4. Everything is explained in the README
-
 # Install dependancies
 $ npm install
 
-# Start the frontend application
+# Start the application
 $ npm start
 ```
 
-You can then access the app on : http://localhost:3000/
+You can then access the app on: http://localhost:3000/. 
