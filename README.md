@@ -1,24 +1,21 @@
-# Redux anecdoce
+# Bloglist frontend
 
-In this exercise, we made a new version of the anecdote voting application from part 1 using Redux.
-As a reminder, this application allows the user to vote between multiple anecdotes and then displays the most popular one.
+In this exercise, we will refactor the Bloglist application that we worked on in parts four and five for it to use Redux for the application's state management. We also used `React Router` for conditional rendering of components based on the url in the browser, as well as `React Bootstrap` for styling our application.
 
-This initial list of anecdotes is stored in the file `db.json`. This file is used by the tool `JSON Server` that acts as a backend server where the data are stored.
+We assume that a user already exist in the database with the good credentials. If not, please head to part 4 for creating a new user using the API.
 
-## Start the application
+## Start the application locally
 
-To start an application, do the following :
+To start an application:
 
 ```bash
+# First, you need to start the backend, to do so, head to the part4. Everything is explained in the README
+
 # Install dependancies
 $ npm install
 
-# Start the backend JSON server
-$ npx json-server --port 3001 --watch db.json
-
-# Start the application
+# Start the frontend application
 $ npm start
 ```
 
-You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
-You can also see the content of the JSON Server by heading to http://localhost:3001/anecdotes
+You can then access the app on : http://localhost:3000/
