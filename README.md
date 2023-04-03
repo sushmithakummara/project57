@@ -1,18 +1,22 @@
-# Anecdotes
+# Phonebook API
 
-The world of software engineering is filled with anecdotes that distill timeless truths from our field into short one-liners.
+In this exercise, we implemented a fullstack phonebook app with a backend written in Node.js and a frontend in react.js. The data are saved in a mongodb database and the app is deployed on heroku at the folowing URL.
 
-This application allows the user to vote between multiple anecdotes and then displays the most popular one.
+* https://peaceful-depths-89341.herokuapp.com/
 
-## Start the application
+## Start the application locally
 
-To start an application, do the following :
+To start an application:
 
 ```bash
 # Install dependancies
-$ yarn install
+$ npm install
+
+# create a .env file and put there the MONGODB_URI for connecting to your mongodb database
+$ echo "MONGODB_URI=<YOUR-MONGODB-URI>" > .env
+
 # Start the application
-$ yarn start
+$ npm run dev
 ```
 
-You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
+You can then access the app on : http://localhost:3001/
