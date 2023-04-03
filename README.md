@@ -1,16 +1,22 @@
-# Course contents
+# Phonebook API
 
-Simple web app for getting used to collections & modules
+In this exercise, we implemented a fullstack phonebook app with a backend written in Node.js and a frontend in react.js. The data are saved in a mongodb database and the app is deployed on heroku at the folowing URL.
 
-## Start the application
+* https://peaceful-depths-89341.herokuapp.com/
 
-To start an application, do the following :
+## Start the application locally
+
+To start an application:
 
 ```bash
 # Install dependancies
-$ yarn install
+$ npm install
+
+# create a .env file and put there the MONGODB_URI for connecting to your mongodb database
+$ echo "MONGODB_URI=<YOUR-MONGODB-URI>" > .env
+
 # Start the application
-$ yarn start
+$ npm run dev
 ```
 
-You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
+You can then access the app on : http://localhost:3001/
