@@ -1,19 +1,17 @@
-## GraphQL frontend
+# Course information
 
-Through the exercises, we will implement a GraphQL frontend for the GraphQL-library created previously.
+Simple web applicaton for understanding the core concepts of TypeScript with React
 
+## Start the application
 
-### Start the application locally
-First, you need to start the backend from the previous exercise. To do so, head to the `part8/library-backend` directory and follow the instructions from the README.
+To start an application, do the following :
 
-
-Then, start the frontend:
 ```bash
 # Install dependancies
-$ npm install
+$ yarn install
 
 # Start the application
-$ npm start
+$ yarn start
 ```
 
-You can then access the app on: http://localhost:3000/. 
+You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
