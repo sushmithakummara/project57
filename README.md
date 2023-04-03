@@ -1,25 +1,24 @@
-# Bloglist frontend
+# Redux anecdoce
 
-In this exercise, we will now create a frontend for the bloglist backend we created in the last part.
-A login functionnality is also implemented for restricting the possibility to view and create blogs only by authenticated users. We assume that a user already exists with the good credentials.
+In this exercise, we made a new version of the anecdote voting application from part 1 using Redux.
+As a reminder, this application allows the user to vote between multiple anecdotes and then displays the most popular one.
 
-Since the objective of this part is to test the react app, unit tests and end-to-end (E2E) tests with cypress are also implemented.
+This initial list of anecdotes is stored in the file `db.json`. This file is used by the tool `JSON Server` that acts as a backend server where the data are stored.
 
-## Start the application locally
+## Start the application
 
-To start an application:
+To start an application, do the following :
 
 ```bash
-# First, you need to start the backend, to do so, head to the part4. Everything is explained in the README
-
 # Install dependancies
 $ npm install
 
-# Start the frontend application
-$ npm start
+# Start the backend JSON server
+$ npx json-server --port 3001 --watch db.json
 
-# For running E2E tests
-$ npm run cypress:open        # Then, click on run all specs
+# Start the application
+$ npm start
 ```
 
-You can then access the app on : http://localhost:3000/
+You can then access the app on : [http://localhost:3000/](http://localhost:3000/)
+You can also see the content of the JSON Server by heading to http://localhost:3001/anecdotes
