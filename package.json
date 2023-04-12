@@ -1,34 +1,41 @@
 {
-  "name": "bloglist",
-  "version": "1.0.0",
-  "description": "Blog list application",
-  "main": "index.js",
-  "scripts": {
-    "start": "cross-env NODE_ENV=production node index.js",
-    "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "lint": "eslint .",
-    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
-    "start:test": "cross-env NODE_ENV=test node index.js"
-  },
-  "author": "Ananias CARVALHO <carvalhoananias@hotmail.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "jest": "^25.3.0",
-    "nodemon": "^2.0.2",
-    "supertest": "^4.0.2"
-  },
+  "name": "redux-anecdotes",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "bcrypt": "^5.0.0",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "cross-env": "^7.0.2",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-async-errors": "^3.1.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.7",
-    "mongoose-unique-validator": "^2.0.3",
-    "morgan": "^1.10.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.1",
+    "json-server": "^0.16.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-scripts": "3.3.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server -p3001 --watch db.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
